@@ -88,13 +88,14 @@ WSGI_APPLICATION = 'fashiohub_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd4hss1c100t0o8',
+        'HOST': 'ec2-54-161-58-21.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'syhdnfdkdwjzus',
+        'PASSWORD': '199ad628740ff16ac3299825974910665af66b7316406f961d24510bd208b7ba'
     }
 }
-
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
