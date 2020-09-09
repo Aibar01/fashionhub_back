@@ -139,7 +139,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://127.0.0.1:3000",
+    "https://fashionhub-app.herokuapp.com"
 ]
 
 CORS_ALLOW_METHODS = [
