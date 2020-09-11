@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,19 +85,24 @@ WSGI_APPLICATION = 'fashiohub_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd4hss1c100t0o8',
+#         'HOST': 'ec2-54-161-58-21.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#         'USER': 'syhdnfdkdwjzus',
+#         'PASSWORD': '199ad628740ff16ac3299825974910665af66b7316406f961d24510bd208b7ba'
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd4hss1c100t0o8',
-        'HOST': 'ec2-54-161-58-21.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'syhdnfdkdwjzus',
-        'PASSWORD': '199ad628740ff16ac3299825974910665af66b7316406f961d24510bd208b7ba'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
-# Password validation
-# https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {

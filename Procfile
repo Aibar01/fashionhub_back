@@ -1,1 +1,0 @@
-web: gunicorn fashiohub_app.wsgi --log-file -
