@@ -25,7 +25,7 @@ SECRET_KEY = '#-n=k8gb=ilcbb6-e*!5ge2#$_arxlp+mkb3s@j)f6g7onxy_s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'fashionhub-back.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '142.93.163.51']
 
 
 # Application definition
