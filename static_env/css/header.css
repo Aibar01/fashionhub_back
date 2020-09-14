@@ -1,0 +1,90 @@
+@font-face {
+	 font-family: 'Futura PT';
+	 src: url('../fonts/FuturaPTCond-Bold.eot');
+	 src: local('Futura PT Cond Bold'), local('FuturaPTCond-Bold'), url('../fonts/FuturaPTCond-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaPTCond-Bold.woff') format('woff'), url('../fonts/FuturaPTCond-Bold.ttf') format('truetype');
+	 font-weight: bold;
+	 font-style: normal;
+}
+ header {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 60px 166px 50px 166px;
+}
+ header .lang .dropdown {
+	 display: none;
+}
+ header .lang a {
+	 font-family: 'Futura PT', sans-serif;
+	 font-style: normal;
+	 font-weight: 600;
+	 font-size: 18px;
+	 line-height: 23px;
+	 text-align: right;
+	 color: #a0a0a0;
+	 text-decoration: none;
+}
+ header .lang #ru {
+	 margin-right: 30px;
+	 border: 0px;
+	 background: transparent;
+	 font-family: 'Futura PT', sans-serif;
+	 font-style: normal;
+	 font-weight: 600;
+	 font-size: 18px;
+	 line-height: 23px;
+	 color: #000;
+}
+ header .lang #en {
+	 font-family: 'Futura PT', sans-serif;
+	 font-style: normal;
+	 font-weight: 600;
+	 font-size: 18px;
+	 line-height: 23px;
+	 color: #000;
+	 background: transparent;
+	 border: 0px;
+}
+ @media only screen and (min-width: 481px) and (max-width: 768px) {
+	 header {
+		 padding: 30px 83px 25px 83px;
+	}
+}
+/* For smartphones: */
+ @media only screen and (min-width: 320px) and (max-width: 480px) {
+	 header {
+		 padding: 12px 17px;
+	}
+	 header .lang #ru, header .lang #en {
+		 display: none;
+	}
+	 header .lang .dropdown {
+		 display: block;
+	}
+	 header .lang .dropdown #navbarDropdown {
+		 font-family: 'Futura PT', sans-serif;
+		 font-style: normal;
+		 font-weight: 600;
+		 font-size: 16px;
+		 line-height: 21px;
+		 text-align: right;
+		 color: #000;
+	}
+	 header .lang .dropdown #navbarDropdown::after {
+		 content: url('../svg/after.svg');
+		 border: 0px;
+		 margin-left: 6px;
+	}
+	 header .lang .dropdown-menu {
+		 border: 0px;
+		 padding: 0px;
+		 min-width: inherit;
+		 text-align: center;
+	}
+	 header .lang .dropdown-menu a {
+		 transform: translate3d(15px, 0px, 0px);
+		 padding: 0px;
+	}
+}
+
